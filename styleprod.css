@@ -1,0 +1,36 @@
+.container {
+display: flex;
+flex-wrap: wrap;
+}
+
+
+product-images {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.selected-image {
+  flex-basis: 60%;
+  margin-right: 20px;
+}
+
+.selected-image img {
+  max-width: 100%;
+}
+
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 40%;
+}
+
+.thumbnail {
+  flex-basis: 20%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.thumbnail:hover {
+  border: 2px solid #000;
+}
