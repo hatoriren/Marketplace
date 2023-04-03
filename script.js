@@ -1,10 +1,11 @@
-const thumbnails = document.querySelectorAll('.thumbnail');
-const selectedImage = document.querySelector('.selected-image img');
+// Функція для додавання товару до кошика
+function addToCart() {
+  const quantity = document.querySelector("#quantity").value;
+  alert(`Товар додано до кошика. Кількість: ${quantity}`);
+}
 
-thumbnails.forEach(thumbnail => {
-  thumbnail.addEventListener('click', () => {
-    const tempSrc = selectedImage.src;
-    selectedImage.src = thumbnail.src;
-    thumbnail.src = tempSrc;
-  });
-});
+// Функція для купівлі товару
+function buyNow() {
+  const quantity = document.querySelector("#quantity").value;
+  alert(`Куплено ${quantity} шт. товару`);
+}
